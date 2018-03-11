@@ -1,0 +1,49 @@
+$link_color_hover : rgb(49, 82, 99);
+$link_color : rgb(104, 145, 162);
+$button_color_hover : rgb(49, 82, 99);
+$button_color : rgb(104, 145, 162);
+
+@mixin box-sizing($value) {
+  -o-box-sizing: $value;
+  -moz-box-sizing: $value;
+  -webkit-box-sizing: $value;
+  box-sizing: $value;
+}
+@mixin border-radius($value){
+  -o-border-radius: $value;
+  -moz-border-radius: $value;
+  -webkit-border-radius: $value;
+  border-radius: $value;
+}
+@mixin box-shadow($value...) {
+  -o-box-shadow: $value;
+  -moz-box-shadow: $value;
+  -webkit-box-shadow: $value;
+  box-shadow: $value;
+}
+@mixin transition($value){
+  -o-transition: $value;
+  -moz-transition: $value;
+  -webkit-transition: $value;
+  transition: $value;
+}
+@mixin transform($value){
+  -o-transform: $value;
+  -moz-transform: $value;
+  -webkit-transform: $value;
+  transform: $value;
+}
+@mixin transform-origin($value){
+  -o-transform-origin: $value;
+  -moz-transform-origin: $value;
+  -webkit-transform-origin: $value;
+  transform-origin: $value;
+}
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}

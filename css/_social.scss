@@ -1,0 +1,60 @@
+div#social {
+  position: fixed;
+  z-index:10000;
+  overflow: hidden;
+  background-color: rgba(104, 145, 162, 0.91);
+  display: table;
+  top: 42%;
+  margin-left: -47px;
+  float: left;
+  @include transition(0.6s);
+
+  nav.social_menu{
+    display: table-cell;
+    ul {
+      margin: 20px 10px 20px 10px;
+      padding: 0;
+      display: block;
+      li {
+        display: block;
+        a {
+          padding: 0;
+          margin-top: 10px;
+          color: #F7F7F7;
+          display: block;
+          text-align: center;
+          @include transition(all .2s ease-in-out);
+          span {
+            font-size: 25px;
+          }
+        }
+        a:hover {
+          @include transform(scale(1.2));
+          color: #fafafa;
+          @include transition(all .2s ease-in-out);
+        }
+      }
+    }
+  }
+  div.vertical-column{
+    background-color: #315263;
+    display: table-cell;
+    width: 20px;
+    padding: 0;
+
+    p {
+      cursor: default;
+      padding: 0;
+      display: block;
+      color: #F7F7F7;
+      font-size: 13px;
+      margin: 0 0 -70px;
+      white-space: nowrap;
+      writing-mode: tb-rl;
+    }
+  }
+}
+div#social:hover{
+  @include transition(0.6s);
+  margin-left: 0;
+}
